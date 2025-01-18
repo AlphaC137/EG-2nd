@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Produce - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-bold text-green-600">Fresh Produce</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-green-600">Home</a>
+                    <a href="marketplace.html" class="text-gray-600 hover:text-green-600">Marketplace</a>
+                    <a href="knowledge-hub.html" class="text-gray-600 hover:text-green-600">Knowledge Hub</a>
+                    <a href="events.html" class="text-gray-600 hover:text-green-600">Events</a>
+                </div>
+
+                <!-- Right Navigation -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="login.html" class="text-gray-600 hover:text-green-600">Login</a>
+                    <a href="signup.html" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-green-50 to-green-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        Fresh Local Produce Direct to Your Door
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Connect directly with local farmers and vendors. Get fresh, sustainable produce while supporting your community.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="marketplace.html" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition duration-300">
+                            Shop Now
+                        </a>
+                        <a href="signup.html" class="border border-green-500 text-green-500 px-6 py-3 rounded-lg hover:bg-green-50 transition duration-300">
+                            Become a Vendor
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/api/placeholder/600/400" alt="Fresh produce collection" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-12 md:py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Choose Fresh Produce?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-500 mb-4">
+                        <i class="fas fa-leaf text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fresh & Local</h3>
+                    <p class="text-gray-600">Get the freshest produce directly from local farmers and vendors in your area.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-500 mb-4">
+                        <i class="fas fa-truck text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Fast Delivery</h3>
+                    <p class="text-gray-600">Enjoy quick and reliable delivery of your fresh produce right to your doorstep.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-green-500 mb-4">
+                        <i class="fas fa-users text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Community Support</h3>
+                    <p class="text-gray-600">Support local farmers and strengthen your community's agricultural ecosystem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Explore Our Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="marketplace.html?category=fruits" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/300/200" alt="Fruits" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Fruits</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="marketplace.html?category=vegetables" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/300/200" alt="Vegetables" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Vegetables</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="marketplace.html?category=herbs" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/300/200" alt="Herbs" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Herbs</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="marketplace.html?category=organic" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="/api/placeholder/300/200" alt="Organic" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-300 flex items-center justify-center">
+                            <span class="text-white text-xl font-semibold">Organic</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p class="text-green-100 mb-8 max-w-2xl mx-auto">
+                Join our growing community of farmers, vendors, and customers. Experience the freshness of local produce today.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="marketplace.html" class="bg-white text-green-600 px-6 py-3 rounded-lg hover:bg-green-50 transition duration-300">
+                    Browse Products
+                </a>
+                <a href="signup.html" class="border-2 border-white text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                    Create Account
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t md:hidden">
+        <div class="flex justify-around py-3">
+            <a href="index.html" class="flex flex-col items-center text-green-600">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </a>
+            <a href="marketplace.html" class="flex flex-col items-center text-gray-600">
+                <i class="fas fa-store text-xl"></i>
+                <span class="text-xs mt-1">Shop</span>
+            </a>
+            <a href="knowledge-hub.html" class="flex flex-col items-center text-gray-600">
+                <i class="fas fa-book text-xl"></i>
+                <span class="text-xs mt-1">Learn</span>
+            </a>
+            <a href="events.html" class="flex flex-col items-center text-gray-600">
+                <i class="fas fa-calendar text-xl"></i>
+                <span class="text-xs mt-1">Events</span>
+            </a>
+        </div>
+    </nav>
+</body>
+</html>
