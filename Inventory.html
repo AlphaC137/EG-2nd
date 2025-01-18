@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+ <meta charset="utf-8"/>
+ <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+ <title>
+  My Inventory
+ </title>
+ <script src="https://cdn.tailwindcss.com">
+ </script>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-pink-50 font-roboto">
+ <div class="relative">
+  <img alt="Decorative background with fruits and vegetables" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/ZSk477z8XisXCmqKxU-z0VB58N_i7Y64gwORZygZlIE.jpg" width="600"/>
+  <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
+   <div class="text-white text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full">
+    09:50
+   </div>
+   <h1 class="text-4xl font-bold text-black bg-white bg-opacity-75 px-4 py-2 rounded-full mt-4">
+    My Inventory
+   </h1>
+  </div>
+ </div>
+ <div class="px-4 py-2">
+  <div class="relative mt-4">
+   <input class="w-full py-2 pl-10 pr-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Search for products..." type="text"/>
+   <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+   </i>
+  </div>
+  <div class="flex space-x-2 mt-4">
+   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
+    Fruits
+   </button>
+   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
+    Vegetables
+   </button>
+   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
+    Herbs
+   </button>
+   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
+    Organic
+   </button>
+   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
+    Imported
+   </button>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+   <div class="bg-white p-4 rounded-lg shadow-md">
+    <img alt="Red apple" class="w-12 h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/CLD6wsa_ZuEdVoBj_IBqmtW3qctJTI5l2FBWUeqX8Jk.jpg" width="50"/>
+    <h2 class="text-center text-xl font-bold mt-2">
+     Apples
+    </h2>
+    <p class="text-center text-gray-600">
+     Price: R10.0
+    </p>
+    <p class="text-center text-gray-600">
+     Qty: 20
+    </p>
+    <div class="flex justify-center space-x-4 mt-4">
+     <i class="fas fa-pen text-blue-500">
+     </i>
+     <i class="fas fa-trash text-red-500">
+     </i>
+    </div>
+   </div>
+   <div class="bg-white p-4 rounded-lg shadow-md">
+    <img alt="Banana" class="w-12 h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/ejQKL8nt2X81eFvi04FuO9QSc3bQk_PnjwELZiYSCuc.jpg" width="50"/>
+    <h2 class="text-center text-xl font-bold mt-2">
+     Bananas
+    </h2>
+    <p class="text-center text-gray-600">
+     Price: R8.0
+    </p>
+    <p class="text-center text-gray-600">
+     Qty: 15
+    </p>
+    <div class="flex justify-center space-x-4 mt-4">
+     <i class="fas fa-pen text-blue-500">
+     </i>
+     <i class="fas fa-trash text-red-500">
+     </i>
+    </div>
+   </div>
+  </div>
+  <div class="flex justify-center mt-6">
+   <button class="bg-green-600 text-white px-6 py-2 rounded-full flex items-center">
+    <i class="fas fa-plus mr-2">
+    </i>
+    Add More Products
+   </button>
+  </div>
+ </div>
+ <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200">
+  <div class="flex justify-around py-2">
+   <div class="text-center">
+    <i class="fas fa-home text-green-600">
+    </i>
+    <p class="text-xs text-green-600">
+     Home
+    </p>
+   </div>
+   <div class="text-center">
+    <i class="fas fa-store text-gray-400">
+    </i>
+    <p class="text-xs text-gray-400">
+     Store
+    </p>
+   </div>
+   <div class="text-center">
+    <i class="fas fa-graduation-cap text-gray-400">
+    </i>
+    <p class="text-xs text-gray-400">
+     Learn
+    </p>
+   </div>
+   <div class="text-center">
+    <i class="fas fa-building text-gray-400">
+    </i>
+    <p class="text-xs text-gray-400">
+     Office
+    </p>
+   </div>
+  </div>
+ </div>
+</body>
+</html>
