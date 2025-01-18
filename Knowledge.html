@@ -1,87 +1,196 @@
-<html>
- <head>
-  <title>
-   Knowledge Hub
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
- </head>
- <body class="bg-pink-50 flex flex-col items-center justify-center min-h-screen">
-  <!-- Header Image -->
-  <div class="relative w-full">
-   <img alt="Decorative background with fruits and vegetables" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/HTCm6wBsvcYaOHwwWLoyrb77jKsjYU5yBq7cUZWwgj8.jpg" width="600"/>
-   <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-    <h1 class="bg-white text-black text-2xl font-bold px-4 py-2 rounded">
-     Knowledge Hub
-    </h1>
-   </div>
-  </div>
-  <!-- Welcome Text -->
-  <div class="text-center mt-6">
-   <h2 class="text-xl font-semibold text-gray-800">
-    Welcome to the Knowledge Hub
-   </h2>
-   <p class="text-gray-600 mt-2">
-    Discover resources, participate in events, and connect with experts to enhance your knowledge.
-   </p>
-   <button onclick="window.location.href='Inventory.html'" class="bg-green-600 text-white px-4 py-2 rounded-full mt-4">
-    Go to Inventory
-   </button>
-  </div>
-  <!-- Resource Cards -->
-  <div class="mt-8 space-y-4 w-11/12 max-w-md">
-   <!-- Resource Library -->
-   <div class="bg-white rounded-lg shadow p-4 flex items-center">
-    <div class="bg-green-500 text-white rounded-full p-3">
-     <i class="fas fa-book text-xl">
-     </i>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub - Fresh Produce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-bold text-green-600">Fresh Produce</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-600">Home</a>
+                    <a href="marketplace.html" class="text-gray-600 hover:text-green-600">Marketplace</a>
+                    <a href="knowledge-hub.html" class="text-green-600">Knowledge Hub</a>
+                    <a href="events.html" class="text-gray-600 hover:text-green-600">Events</a>
+                </div>
+
+                <!-- Right Navigation -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="login.html" class="text-gray-600 hover:text-green-600">Login</a>
+                    <a href="signup.html" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-16">
+        <div class="w-full h-64 bg-gradient-to-r from-green-600 to-green-400">
+            <div class="max-w-7xl mx-auto px-4 h-full flex items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl font-bold mb-4">Knowledge Hub</h1>
+                    <p class="text-green-50 text-lg max-w-2xl">
+                        Discover resources, participate in events, and connect with experts to enhance your farming and business knowledge.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="ml-4 flex-1">
-     <h3 class="text-lg font-semibold text-green-700">
-      Resource Library
-     </h3>
-     <p class="text-gray-600">
-      Access a vast library of articles, guides, and tools.
-     </p>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <!-- Featured Resources -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-500 text-white rounded-full p-3">
+                        <i class="fas fa-book text-xl"></i>
+                    </div>
+                    <h3 class="ml-4 text-xl font-semibold text-gray-800">Resource Library</h3>
+                </div>
+                <p class="text-gray-600 mb-4">Access our comprehensive collection of farming guides, market insights, and best practices.</p>
+                <a href="#" class="text-green-600 hover:text-green-700 font-medium">
+                    Browse Resources <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-500 text-white rounded-full p-3">
+                        <i class="fas fa-video text-xl"></i>
+                    </div>
+                    <h3 class="ml-4 text-xl font-semibold text-gray-800">Online Learning</h3>
+                </div>
+                <p class="text-gray-600 mb-4">Participate in live webinars and self-paced courses on various agricultural topics.</p>
+                <a href="#" class="text-green-600 hover:text-green-700 font-medium">
+                    View Courses <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <div class="flex items-center mb-4">
+                    <div class="bg-green-500 text-white rounded-full p-3">
+                        <i class="fas fa-users text-xl"></i>
+                    </div>
+                    <h3 class="ml-4 text-xl font-semibold text-gray-800">Community</h3>
+                </div>
+                <p class="text-gray-600 mb-4">Connect with fellow farmers, share experiences, and learn from the community.</p>
+                <a href="#" class="text-green-600 hover:text-green-700 font-medium">
+                    Join Discussion <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Latest Articles -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Latest Articles</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/200" alt="Sustainable Farming" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Sustainable Farming Practices</h3>
+                    <p class="text-gray-600 mb-4">Learn about the latest sustainable farming techniques and how to implement them.</p>
+                    <a href="#" class="text-green-600 hover:text-green-700 font-medium">Read More</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/200" alt="Market Trends" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Market Trends 2025</h3>
+                    <p class="text-gray-600 mb-4">Discover the latest market trends and opportunities in the agriculture sector.</p>
+                    <a href="#" class="text-green-600 hover:text-green-700 font-medium">Read More</a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/api/placeholder/400/200" alt="Pest Control" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Natural Pest Control</h3>
+                    <p class="text-gray-600 mb-4">Effective strategies for managing pests without harmful chemicals.</p>
+                    <a href="#" class="text-green-600 hover:text-green-700 font-medium">Read More</a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Expert Consultation -->
+        <div class="bg-green-50 rounded-lg p-8 mb-12">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Need Expert Advice?</h2>
+                    <p class="text-gray-600 max-w-xl">
+                        Connect with agricultural experts for personalized guidance on farming, market strategies, and more.
+                    </p>
+                </div>
+                <button class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Upcoming Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Organic Farming Workshop</h3>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Online</span>
+                </div>
+                <p class="text-gray-600 mb-4">Learn the fundamentals of organic farming from industry experts.</p>
+                <div class="flex items-center text-gray-500">
+                    <i class="far fa-calendar-alt mr-2"></i>
+                    <span>March 15, 2025</span>
+                    <i class="far fa-clock ml-4 mr-2"></i>
+                    <span>2:00 PM</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-semibold text-gray-800">Market Strategy Seminar</h3>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">In Person</span>
+                </div>
+                <p class="text-gray-600 mb-4">Develop effective strategies to grow your agricultural business.</p>
+                <div class="flex items-center text-gray-500">
+                    <i class="far fa-calendar-alt mr-2"></i>
+                    <span>March 20, 2025</span>
+                    <i class="far fa-clock ml-4 mr-2"></i>
+                    <span>10:00 AM</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <i class="fas fa-chevron-right text-gray-400">
-    </i>
-   </div>
-   <!-- Webinars & Workshops -->
-   <div class="bg-white rounded-lg shadow p-4 flex items-center">
-    <div class="bg-green-500 text-white rounded-full p-3">
-     <i class="fas fa-video text-xl">
-     </i>
-    </div>
-    <div class="ml-4 flex-1">
-     <h3 class="text-lg font-semibold text-green-700">
-      Webinars &amp; Workshops
-     </h3>
-     <p class="text-gray-600">
-      Join live sessions and interactive workshops.
-     </p>
-    </div>
-    <i class="fas fa-chevron-right text-gray-400">
-    </i>
-   </div>
-   <!-- Expert Consultation -->
-   <div class="bg-white rounded-lg shadow p-4 flex items-center">
-    <div class="bg-green-500 text-white rounded-full p-3">
-     <i class="fas fa-headset text-xl">
-     </i>
-    </div>
-    <div class="ml-4 flex-1">
-     <h3 class="text-lg font-semibold text-green-700">
-      Expert Consultation
-     </h3>
-     <p class="text-gray-600">
-      Get one-on-one advice from industry experts.
-     </p>
-    </div>
-    <i class="fas fa-chevron-right text-gray-400">
-    </i>
-   </div>
-  </div>
- </body>
+
+    <!-- Mobile Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t md:hidden">
+        <div class="flex justify-around py-3">
+            <a href="index.html" class="flex flex-col items-center text-gray-600">
+                <i class="fas fa-home text-xl"></i>
+                <span class="text-xs mt-1">Home</span>
+            </a>
+            <a href="marketplace.html" class="flex flex-col items-center text-gray-600">
+                <i class="fas fa-store text-xl"></i>
+                <span class="text-xs mt-1">Shop</span>
+            </a>
+            <a href="knowledge-hub.html" class="flex flex-col items-center text-green-600">
+                <i class="fas fa-book text-xl"></i>
+                <span class="text-xs mt-1">Learn</span>
+            </a>
+            <a href="events.html" class="flex flex-col items-center text-gray-600">
+                <i class="fas fa-calendar text-xl"></i>
+                <span class="text-xs mt-1">Events</span>
+            </a>
+        </div>
+    </nav>
+</body>
 </html>

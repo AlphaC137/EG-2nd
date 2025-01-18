@@ -1,127 +1,131 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="utf-8"/>
- <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
- <title>
-  My Inventory
- </title>
- <script src="https://cdn.tailwindcss.com">
- </script>
- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Inventory - Fresh Produce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-pink-50 font-roboto">
- <div class="relative">
-  <img alt="Decorative background with fruits and vegetables" class="w-full h-48 object-cover" height="200" src="https://storage.googleapis.com/a1aa/image/ZSk477z8XisXCmqKxU-z0VB58N_i7Y64gwORZygZlIE.jpg" width="600"/>
-  <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-   <div class="text-white text-2xl font-bold bg-black bg-opacity-50 px-4 py-2 rounded-full">
-    09:50
-   </div>
-   <h1 class="text-4xl font-bold text-black bg-white bg-opacity-75 px-4 py-2 rounded-full mt-4">
-    My Inventory
-   </h1>
-  </div>
- </div>
- <div class="px-4 py-2">
-  <div class="relative mt-4">
-   <input class="w-full py-2 pl-10 pr-4 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Search for products..." type="text"/>
-   <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
-   </i>
-  </div>
-  <div class="flex space-x-2 mt-4">
-   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
-    Fruits
-   </button>
-   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
-    Vegetables
-   </button>
-   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
-    Herbs
-   </button>
-   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
-    Organic
-   </button>
-   <button class="bg-green-600 text-white px-4 py-2 rounded-full">
-    Imported
-   </button>
-  </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-   <div class="bg-white p-4 rounded-lg shadow-md">
-    <img alt="Red apple" class="w-12 h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/CLD6wsa_ZuEdVoBj_IBqmtW3qctJTI5l2FBWUeqX8Jk.jpg" width="50"/>
-    <h2 class="text-center text-xl font-bold mt-2">
-     Apples
-    </h2>
-    <p class="text-center text-gray-600">
-     Price: R10.0
-    </p>
-    <p class="text-center text-gray-600">
-     Qty: 20
-    </p>
-    <div class="flex justify-center space-x-4 mt-4">
-     <i class="fas fa-pen text-blue-500">
-     </i>
-     <i class="fas fa-trash text-red-500">
-     </i>
+<body class="bg-gray-50 min-h-screen pb-16 md:pb-0">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-bold text-green-600">Fresh Produce</span>
+                </a>
+Copy            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-600">Home</a>
+                <a href="marketplace.html" class="text-gray-600 hover:text-green-600">Marketplace</a>
+                <a href="my-inventory.html" class="text-green-600">My Inventory</a>
+                <a href="vendor-profile.html" class="text-gray-600 hover:text-green-600">Profile</a>
+            </div>
+
+            <!-- Add Product Button -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="add-product.html" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+                    <i class="fas fa-plus mr-2"></i>Add Product
+                </a>
+            </div>
+        </div>
     </div>
-   </div>
-   <div class="bg-white p-4 rounded-lg shadow-md">
-    <img alt="Banana" class="w-12 h-12 mx-auto" height="50" src="https://storage.googleapis.com/a1aa/image/ejQKL8nt2X81eFvi04FuO9QSc3bQk_PnjwELZiYSCuc.jpg" width="50"/>
-    <h2 class="text-center text-xl font-bold mt-2">
-     Bananas
-    </h2>
-    <p class="text-center text-gray-600">
-     Price: R8.0
-    </p>
-    <p class="text-center text-gray-600">
-     Qty: 15
-    </p>
-    <div class="flex justify-center space-x-4 mt-4">
-     <i class="fas fa-pen text-blue-500">
-     </i>
-     <i class="fas fa-trash text-red-500">
-     </i>
+</nav>
+
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto px-4 pt-20">
+    <!-- Header Section -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold text-gray-800">My Inventory</h1>
+                <p class="text-gray-600 mt-1">Manage your products</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="text-gray-600">
+                    <span class="font-bold">12</span> Products
+                </div>
+                <a href="add-product.html" class="md:hidden bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">
+                    <i class="fas fa-plus mr-2"></i>Add Product
+                </a>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="mt-6 flex flex-col md:flex-row md:items-center md:space-x-4">
+            <div class="relative flex-grow mb-4 md:mb-0">
+                <input type="text" placeholder="Search products..." 
+                       class="w-full py-2 pl-10 pr-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+            <div class="flex space-x-2 overflow-x-auto pb-2 md:pb-0">
+                <button class="px-4 py-2 rounded-lg bg-green-500 text-white hover:bg-green-600 whitespace-nowrap">All</button>
+                <button class="px-4 py-2 rounded-lg bg-white text-gray-600 border border-gray-300 hover:bg-gray-50 whitespace-nowrap">Fruits</button>
+                <button class="px-4 py-2 rounded-lg bg-white text-gray-600 border border-gray-300 hover:bg-gray-50 whitespace-nowrap">Vegetables</button>
+                <button class="px-4 py-2 rounded-lg bg-white text-gray-600 border border-gray-300 hover:bg-gray-50 whitespace-nowrap">Herbs</button>
+                <button class="px-4 py-2 rounded-lg bg-white text-gray-600 border border-gray-300 hover:bg-gray-50 whitespace-nowrap">Organic</button>
+            </div>
+        </div>
     </div>
-   </div>
-  </div>
-  <div class="flex justify-center mt-6">
-   <button class="bg-green-600 text-white px-6 py-2 rounded-full flex items-center">
-    <i class="fas fa-plus mr-2">
-    </i>
-    Add More Products
-   </button>
-  </div>
- </div>
- <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200">
-  <div class="flex justify-around py-2">
-   <div class="text-center">
-    <i class="fas fa-home text-green-600">
-    </i>
-    <p class="text-xs text-green-600">
-     Home
-    </p>
-   </div>
-   <div class="text-center">
-    <i class="fas fa-store text-gray-400">
-    </i>
-    <p class="text-xs text-gray-400">
-     Store
-    </p>
-   </div>
-   <div class="text-center">
-    <i class="fas fa-graduation-cap text-gray-400">
-    </i>
-    <p class="text-xs text-gray-400">
-     Learn
-    </p>
-   </div>
-   <div class="text-center">
-    <i class="fas fa-building text-gray-400">
-    </i>
-    <p class="text-xs text-gray-400">
-     Office
-    </p>
-   </div>
-  </div>
- </div>
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Product Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div class="relative">
+                <img src="/api/placeholder/300/200" alt="Product" class="w-full h-48 object-cover">
+                <div class="absolute top-2 right-2 flex space-x-2">
+                    <button class="p-2 bg-blue-500 text-white rounded-full hover:bg-blue-600">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="p-2 bg-red-500 text-white rounded-full hover:bg-red-600">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="text-lg font-semibold text-gray-800">Fresh Apples</h3>
+                <div class="mt-2 space-y-1">
+                    <p class="text-gray-600">Category: Fruits</p>
+                    <p class="text-gray-600">Price: R10.00/kg</p>
+                    <p class="text-gray-600">Stock: 20 units</p>
+                    <div class="mt-2">
+                        <span class="inline-block px-2 py-1 text-sm bg-green-100 text-green-800 rounded">Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More product cards... -->
+    </div>
+</main>
+
+<!-- Mobile Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white border-t md:hidden">
+    <div class="flex justify-around py-3">
+        <a href="index.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-home text-xl"></i>
+            <span class="text-xs mt-1">Home</span>
+        </a>
+        <a href="marketplace.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-store text-xl"></i>
+            <span class="text-xs mt-1">Shop</span>
+        </a>
+        <a href="my-inventory.html" class="flex flex-col items-center text-green-600">
+            <i class="fas fa-boxes text-xl"></i>
+            <span class="text-xs mt-1">Inventory</span>
+        </a>
+        <a href="vendor-profile.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-user text-xl"></i>
+            <span class="text-xs mt-1">Profile</span>
+        </a>
+    </div>
+</nav>
+
+<script>
+    // Add your JavaScript for search, filter, and CRUD operations here
+</script>
 </body>
 </html>

@@ -1,76 +1,159 @@
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>
-     Add Product
-    </title>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-   </head>
-   <body class="bg-green-500 flex items-center justify-center min-h-screen">
-    <div class="w-full max-w-md mx-auto p-4">
-     <div class="relative">
-      <img alt="Decorative background with fruits and vegetables" class="w-full h-48 object-cover rounded-lg" height="200" src="https://storage.googleapis.com/a1aa/image/cbTo77SjxQjxdGTjxBh8GpBXyn-q55ztUTctgZT6C_A.jpg" width="400"/>
-      <div class="absolute top-4 left-4 text-white text-lg font-bold">
-       09:36
-      </div>
-      <div class="absolute top-4 right-4 w-10 h-4 bg-black rounded-full">
-      </div>
-      <div class="absolute top-16 left-1/2 transform -translate-x-1/2 bg-white text-black text-2xl font-bold px-4 py-2 rounded-lg shadow-lg">
-       Add Product
-      </div>
-     </div>
-     <div class="bg-white p-6 rounded-lg shadow-lg mt-6">
-      <div class="space-y-4">
-       <div class="flex items-center border border-gray-300 rounded-lg p-2">
-        <i class="fas fa-shopping-bag text-gray-400 mr-2">
-        </i>
-        <input class="w-full border-none focus:ring-0" placeholder="Product Name" type="text"/>
-       </div>
-       <div class="flex items-center border border-gray-300 rounded-lg p-2">
-        <i class="fas fa-dollar-sign text-gray-400 mr-2">
-        </i>
-        <input class="w-full border-none focus:ring-0" placeholder="Price (R)" type="text"/>
-       </div>
-       <div class="flex items-center border border-gray-300 rounded-lg p-2">
-        <i class="fas fa-sort-numeric-up text-gray-400 mr-2">
-        </i>
-        <input class="w-full border-none focus:ring-0" placeholder="Quantity" type="text"/>
-       </div>
-       <div class="flex items-center border border-gray-300 rounded-lg p-2">
-        <i class="fas fa-shapes text-gray-400 mr-2">
-        </i>
-        <select class="w-full border-none focus:ring-0">
-         <option>
-          Category
-         </option>
-        </select>
-       </div>
-       <div class="flex items-center border border-gray-300 rounded-lg p-2">
-        <i class="fas fa-file-alt text-gray-400 mr-2">
-        </i>
-        <input class="w-full border-none focus:ring-0" placeholder="Description" type="text"/>
-       </div>
-      </div>
-      <div class="mt-4">
-       <label class="block text-gray-700 font-bold mb-2">
-        Product Image:
-       </label>
-       <div class="flex items-center">
-        <button class="flex items-center justify-center bg-green-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg">
-         <i class="fas fa-plus mr-2">
-         </i>
-         Add Product
-        </button>
-        <img alt="Product image placeholder" class="ml-4 w-10 h-10 object-cover rounded-lg" height="40" src="https://storage.googleapis.com/a1aa/image/zG3UKKLcjzAsdcIApnZGaVk44X2uBQ_66oKcwwQr_qc.jpg" width="40"/>
-       </div>
-      </div>
-     </div>
-     <div class="text-center text-white mt-6">
-      No products added yet
-     </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - Fresh Produce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen pb-16 md:pb-0">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-bold text-green-600">Fresh Produce</span>
+                </a>
+Copy            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-green-600">Home</a>
+                <a href="marketplace.html" class="text-gray-600 hover:text-green-600">Marketplace</a>
+                <a href="my-inventory.html" class="text-green-600">My Inventory</a>
+                <a href="vendor-profile.html" class="text-gray-600 hover:text-green-600">Profile</a>
+            </div>
+
+            <!-- User Menu -->
+            <div class="hidden md:flex items-center space-x-4">
+                <button class="text-gray-600 hover:text-green-600">
+                    <i class="fas fa-user-circle text-xl"></i>
+                </button>
+            </div>
+        </div>
     </div>
-   </body>
-   </html>
+</nav>
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto px-4 pt-20 pb-12">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <!-- Header -->
+        <div class="bg-green-600 p-6 text-white">
+            <h1 class="text-2xl font-bold">Add New Product</h1>
+            <p class="text-green-100 mt-2">Fill in the product details below</p>
+        </div>
+
+        <!-- Form -->
+        <form id="addProductForm" class="p-6 space-y-6">
+            <!-- Basic Details -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Product Name</label>
+                    <div class="flex items-center border border-gray-300 rounded-lg p-2">
+                        <i class="fas fa-shopping-bag text-gray-400 mr-2"></i>
+                        <input type="text" required class="w-full focus:outline-none" placeholder="Enter product name">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Category</label>
+                    <div class="flex items-center border border-gray-300 rounded-lg p-2">
+                        <i class="fas fa-tag text-gray-400 mr-2"></i>
+                        <select required class="w-full focus:outline-none bg-transparent">
+                            <option value="">Select category</option>
+                            <option value="fruits">Fruits</option>
+                            <option value="vegetables">Vegetables</option>
+                            <option value="herbs">Herbs</option>
+                            <option value="organic">Organic</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Price (R)</label>
+                    <div class="flex items-center border border-gray-300 rounded-lg p-2">
+                        <i class="fas fa-dollar-sign text-gray-400 mr-2"></i>
+                        <input type="number" required step="0.01" min="0" class="w-full focus:outline-none" placeholder="0.00">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Quantity Available</label>
+                    <div class="flex items-center border border-gray-300 rounded-lg p-2">
+                        <i class="fas fa-boxes text-gray-400 mr-2"></i>
+                        <input type="number" required min="1" class="w-full focus:outline-none" placeholder="Enter quantity">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Description</label>
+                <div class="border border-gray-300 rounded-lg p-2">
+                    <textarea rows="4" class="w-full focus:outline-none resize-none" placeholder="Enter product description"></textarea>
+                </div>
+            </div>
+
+            <!-- Image Upload -->
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Product Images</label>
+                <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                    <div class="space-y-2">
+                        <i class="fas fa-cloud-upload-alt text-4xl text-gray-400"></i>
+                        <div class="text-gray-600">
+                            <p>Drag and drop your images here, or</p>
+                            <label class="text-green-600 hover:text-green-700 cursor-pointer">
+                                browse
+                                <input type="file" class="hidden" accept="image/*" multiple>
+                            </label>
+                        </div>
+                        <p class="text-xs text-gray-500">Maximum file size: 5MB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="flex justify-end space-x-4">
+                <button type="button" class="px-6 py-2 border border-gray-300 rounded-lg text-gray-600 hover:bg-gray-50">
+                    Cancel
+                </button>
+                <button type="submit" class="px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                    Add Product
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<!-- Mobile Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white border-t md:hidden">
+    <div class="flex justify-around py-3">
+        <a href="index.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-home text-xl"></i>
+            <span class="text-xs mt-1">Home</span>
+        </a>
+        <a href="marketplace.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-store text-xl"></i>
+            <span class="text-xs mt-1">Shop</span>
+        </a>
+        <a href="my-inventory.html" class="flex flex-col items-center text-green-600">
+            <i class="fas fa-boxes text-xl"></i>
+            <span class="text-xs mt-1">Inventory</span>
+        </a>
+        <a href="vendor-profile.html" class="flex flex-col items-center text-gray-600">
+            <i class="fas fa-user text-xl"></i>
+            <span class="text-xs mt-1">Profile</span>
+        </a>
+    </div>
+</nav>
+
+<script>
+    // Form submission handler
+    document.getElementById('addProductForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert('Product added successfully!');
+    });
+</script>
+</body>
+</html>
